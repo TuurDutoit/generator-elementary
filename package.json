@@ -1,0 +1,38 @@
+{
+  "name": "generator-vala",
+  "version": "0.0.1",
+  "description": "Vala app generator for Elementary OS",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "eddiemoore/generator-vala",
+  "author": {
+    "name": "Ed Moore",
+    "email": "eddie.moore@gmail.com",
+    "url": "https://github.com/eddiemoore"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "elementary OS",
+    "vala"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0",
+    "yosay": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
