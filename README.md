@@ -1,7 +1,5 @@
 # generator-vala [![Build Status](https://secure.travis-ci.org/eddiemoore/generator-vala.png?branch=master)](https://travis-ci.org/eddiemoore/generator-vala)
 
-> [Yeoman](http://yeoman.io) generator
-
 
 ## Getting Started
 
@@ -32,6 +30,9 @@ Finally, initiate the generator:
 ```bash
 $ yo vala
 ```
+
+## Resources
+Template for main project based on [Euclide](https://mefrio.wordpress.com/2013/05/25/euclide-ported-to-scratch-2-0-improvements-coming/) for Scratch templates
 
 ## License
 
