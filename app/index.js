@@ -51,12 +51,9 @@ var ValaGenerator = yeoman.generators.Base.extend({
     this.mkdir('po');
     this.mkdir('src');
 
+    this._.templateSettings.interpolate = /<%=([\s\S]+?)%>/g;
     this.template('_AUTHORS', 'AUTHORS');
-    // this.template('_CMakeLists.txt', 'CMakeLists.txt', this, {
-    //   evaluate: /\<\%\=([\s\S]+?)\%\>/g,
-    //   interpolate: /\<\%\=([\s\S]+?)\%\>/g,
-    //   escape: /\<\%\=([\s\S]+?)\%\>/g
-    // });
+    this.template('_CMakeLists.txt', 'CMakeLists.txt');
     this.template('_quickbuild.sh', 'quickbuild.sh');
 
     this.copy('_gitignore', '.gitignore');
