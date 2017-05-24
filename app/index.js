@@ -29,7 +29,7 @@ var ValaGenerator = yeoman.generators.Base.extend({
     },
     {
       name: "tagline",
-      message: "What is your app\"s tagline?",
+      message: "What is your app\'s tagline?",
     },
     {
       type: "editor",

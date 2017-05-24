@@ -1,6 +1,6 @@
 {
   "name": "generator-elementary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vala app generator for Elementary OS",
   "license": "MIT",
   "main": "app/index.js",
@@ -25,8 +25,9 @@
     "vala"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
     "chalk": "~1.0.0",
+    "color": "^1.0.3",
+    "yeoman-generator": "~0.16.0",
     "yosay": "^0.1.0"
   },
   "devDependencies": {
