@@ -1,11 +1,11 @@
-project (<%= _.slugify(appName) %>)
+project (<%= appNameSlug %>)
 cmake_minimum_required (VERSION 2.8)
 cmake_policy (VERSION 2.6)
 
-set (DATADIR "${CMAKE_INSTALL_PREFIX}/share/<%= _.slugify(appName) %>")
-set (PKGDATADIR "${DATADIR}/<%= _.slugify(appName) %>")
-set (GETTEXT_PACKAGE "<%= _.slugify(appName) %>")
-set (RELEASE_NAME "<%= _.capitalize(appName) %>")
+set (DATADIR "${CMAKE_INSTALL_PREFIX}/share/<%= appNameSlug %>")
+set (PKGDATADIR "${DATADIR}/<%= appNameSlug %>")
+set (GETTEXT_PACKAGE "<%= appNameSlug %>")
+set (RELEASE_NAME "<%= AppName %>")
 set (VERSION "0.1")
 set (VERSION_INFO "Release")
 set (PREFIX ${CMAKE_INSTALL_PREFIX})
@@ -25,7 +25,7 @@ ensure_vala_version ("0.18" MINIMUM)
 include (ValaPrecompile)
 
 # Definitions
-add_definitions (-DGETTEXT_PACKAGE="<%= _.slugify(appName) %>")
+add_definitions (-DGETTEXT_PACKAGE="<%= appNameSlug %>")
 
 find_package(PkgConfig)
 pkg_check_modules(DEPS REQUIRED granite gtk+-3.0 gthread-2.0)
@@ -39,7 +39,7 @@ ensure_vala_version("0.16.0" MINIMUM)
 
 include(ValaPrecompile)
 vala_precompile(VALA_C
-    src/<%= _.capitalize(appName) %>.vala
+    src/<%= AppName %>.vala
     src/MainWindow.vala
     src/config.vala
 PACKAGES
@@ -51,11 +51,10 @@ OPTIONS
 
 add_subdirectory (po)
 
-add_executable(<%= _.slugify(appName) %> ${VALA_C})
+add_executable(<%= appNameSlug %> ${VALA_C})
 
-install (TARGETS <%= _.slugify(appName) %> RUNTIME DESTINATION bin)
-install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/<%= _.slugify(appName) %>.desktop DESTINATION share/applications)
-IF (EXISTS (${CMAKE_CURRENT_SOURCE_DIR}/data/<%= _.slugify(appName) %>.svg))
-    install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/<%= _.slugify(appName) %>.svg DESTINATION share/icons/hicolor/48x48/apps)
+install (TARGETS <%= appNameSlug %> RUNTIME DESTINATION bin)
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/<%= appNameSlug %>.desktop DESTINATION share/applications)
+IF (EXISTS (${CMAKE_CURRENT_SOURCE_DIR}/data/<%= appNameSlug %>.svg))
+    install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/<%= appNameSlug %>.svg DESTINATION share/icons/hicolor/48x48/apps)
 ENDIF ()
-

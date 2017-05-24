@@ -1,0 +1,8 @@
+* Clean up: remove unused modules, change to my code style, etc.
+* Set up tests
+* Set up CI
+* Think of a more flexible way to build this
+* Default price for apps
+* Default text color based on main color
+    Is simply black/white enough?
+* Optional introductory comments in source files

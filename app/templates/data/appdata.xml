@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright <% year %> <% authorName %> <<% authorEmail %>> -->
+<component type="desktop">
+  <id>com.github.<% authorGithub %>.<% appNameSlug %>.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license><% LICENSE %></project_license>
+  <name><% AppName %></name>
+  <summary><% tagline %></summary>
+  <% if(hasDescription) { %>
+    <description>
+      <% description %>
+    </description>
+  <% } %>
+  <% if(publish) { %>
+    <custom>
+       <value key="x-appcenter-color-primary"><% color %></value>
+       <value key="x-appcenter-color-primary-text"><% textColor %></value>
+       <value key="x-appcenter-suggested-price"><% price %></value>
+    </custom>
+  <% } %>
+</component>

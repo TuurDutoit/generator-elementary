@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=Application
-Name=<%= _.slugify(appName) %>
+Name=<%= appNameSlug %>
 Comment=<%= appName %>
-GenericName=<%= _.slugify(appName) %>
-Exec=<%= _.slugify(appName) %> %U
-Icon=<%= _.slugify(appName) %>
+GenericName=<%= appNameSlug %>
+Exec=<%= appNameSlug %> %U
+Icon=<%= appNameSlug %>
 Terminal=false
 Categories=development

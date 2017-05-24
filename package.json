@@ -1,14 +1,14 @@
 {
-  "name": "generator-vala",
+  "name": "generator-elementary",
   "version": "0.0.1",
   "description": "Vala app generator for Elementary OS",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "eddiemoore/generator-vala",
+  "repository": "TuurDutoit/generator-elementary",
   "author": {
-    "name": "Ed Moore",
-    "email": "eddie.moore@gmail.com",
-    "url": "https://github.com/eddiemoore"
+    "name": "Tuur Dutoit",
+    "email": "me@tuurdutoit.be",
+    "url": "https://github.com/TuurDutoit"
   },
   "engines": {
     "node": ">=0.10.0"

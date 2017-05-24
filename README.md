@@ -1,4 +1,4 @@
-# generator-vala [![Build Status](https://secure.travis-ci.org/eddiemoore/generator-vala.png?branch=master)](https://travis-ci.org/eddiemoore/generator-vala)
+# generator-elementary
 
 
 ## Getting Started
@@ -19,20 +19,20 @@ $ npm install -g yo
 
 ### Installation
 
-To install generator-vala from npm, run:
+To install generator-elementary from npm, run:
 
 ```bash
-$ npm install -g generator-vala
+$ npm install -g generator-elementary
 ```
 
 Finally, initiate the generator:
 
 ```bash
-$ yo vala
+$ yo elementary
 ```
 
 ## Resources
-Template for main project based on [Euclide](https://mefrio.wordpress.com/2013/05/25/euclide-ported-to-scratch-2-0-improvements-coming/) for Scratch templates
+Based on [generator-vala](https://www.npmjs.com/package/generator-vala).
 
 ## License
 

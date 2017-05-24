@@ -12,4 +12,4 @@ cmake ..
 make
 
 #Next we copy the executable to our root project file.
-cp graniteapp ../<%= _.capitalize(appName) %>
+cp graniteapp ../<%= AppName %>
